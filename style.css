@@ -1,0 +1,136 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation Bar */
+.nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header Section */
+.header {
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.hover-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.header:hover .hover-text {
+  opacity: 1;
+}
+
+/* Profile Section */
+.profile {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: contain; /* prevents face cropping */
+  background-color: white;
+  border: 3px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+  font-size: 16px;
+  color: #2188b6;
+  margin-top: 15px;
+}
+
+/* Projects Section */
+.projects {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+  color: #2188b6;
+}
+
+.project {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Gallery Title */
+.gallery-title {
+  text-align: center;
+  margin-top: 30px;
+  color: #2188b6;
+}
+
+/* Responsive Gallery */
+.responsive-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.responsive-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 30px;
+}
